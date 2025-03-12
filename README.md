@@ -6,3 +6,4 @@ The folders contain the orignal handout and the questions. The solutions are in 
 
 The solutions to Kaggle will be linked shortly.
 
+Please let me know if you spot any errors!
