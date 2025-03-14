@@ -14,15 +14,13 @@ class Dropout(object):
 
         if train:
             # TODO: Generate mask and apply to x
-
-            raise NotImplementedError("Dropout Forward (Train) Not Implemented")
-            
+            self.mask = np.random.binomial(1, 1 - self.p, size=x.shape) ## taking 1-p as p is prob of dropping ie. 0 so success ie 1 is 1-p
+            x = x * self.mask / (1 - self.p)
+            return x
         else:
-            # TODO: Return x as is
-
-            raise NotImplementedError("Dropout Forward (Inference) Not Implemented")
+            return x
 		
     def backward(self, delta):
         # TODO: Multiply mask with delta and return
-
-        raise NotImplementedError("Dropout Backward Not Implemented")
+        delta = delta * self.mask
+        return delta
