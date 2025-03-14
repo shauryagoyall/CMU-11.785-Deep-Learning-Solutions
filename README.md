@@ -1,4 +1,4 @@
-# CMU-11.785-Deep-Learning-Solutions
+# CMU 11.785 Deep Learning Solutions
 
 https://deeplearning.cs.cmu.edu/S25/index.html
 
